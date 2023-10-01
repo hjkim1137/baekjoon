@@ -1,14 +1,5 @@
-// 제출할 때: /dev/stdin
-
-// 입력:
-// 14
-// push 1
-// push 2
-// top
-// ...
-
 const array = require('fs')
-  .readFileSync('example.txt')
+  .readFileSync('example.txt') //제출시: '/dev/stdin'
   .toString()
   .trim()
   .split('\n'); // 문자 -> 배열화
@@ -51,6 +42,7 @@ for (let i = 0; i < length; i++) {
 console.log(result.join('\n'));
 // result: ['2', 2, 0, '2', '1', -1,  0, 1, -1, 0, '3']
 // result.join() : 2,2,0,2,1,-1,0,1,-1,0,3
+
 // result.join('\n')
 // 2
 // 2
